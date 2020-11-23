@@ -83,6 +83,12 @@
     };
     window.onscroll = throttle(checkImgs);
     function changePreviewType(previewType) {
+        var UA = navigator.userAgent;
+        var isWeixin = /MicroMessenger/gi.test(UA);
+        if (isWeixin && previewType === 'allImages') {
+            // 禁用微信端图片预览模式下的点击操作
+            return
+        }
         var url = window.location.href;
         if (url.indexOf("officePreviewType=image") != -1) {
             url = url.replace("officePreviewType=image", "officePreviewType="+previewType);
