@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
     <title>图片预览</title>
     <link rel="stylesheet" href="css/viewer.min.css">
     <style>
@@ -16,7 +17,7 @@
         body {
             background-color: #404040;
         }
-        #dowebok { width: 800px; margin: 0 auto; font-size: 0;}
+        #dowebok { width: 100%; margin: 0 auto; font-size: 0;}
         #dowebok li {  display: inline-block;width: 50px;height: 50px; margin-left: 1%; padding-top: 1%;}
         /*#dowebok li img { width: 200%;}*/
     </style>
